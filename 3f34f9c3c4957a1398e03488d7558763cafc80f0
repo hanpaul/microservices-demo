@@ -1,0 +1,1 @@
+{"jobID":"d4768958-5c99-d1c1-47b1-12abcfda7545","spec":{"type":"policy","cause":{"Message":"","User":"Paul Han \u003cpaul.han@roche.com\u003e"},"spec":{"sock-shop:deployment/carts-db":{"add":{"automated":"true"},"remove":null}}},"result":null}
