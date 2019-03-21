@@ -6,6 +6,8 @@ metadata:
   labels:
     name: carts-db
   namespace: sock-shop
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   template:
@@ -22,18 +24,18 @@ spec:
         securityContext:
           capabilities:
             drop:
-              - all
+            - all
             add:
-              - CHOWN
-              - SETGID
-              - SETUID
+            - CHOWN
+            - SETGID
+            - SETUID
           readOnlyRootFilesystem: true
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
       volumes:
-        - name: tmp-volume
-          emptyDir:
-            medium: Memory
+      - name: tmp-volume
+        emptyDir:
+          medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
