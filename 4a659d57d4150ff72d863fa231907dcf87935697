@@ -1,0 +1,1 @@
+{"jobID":"2c991f92-edd2-a42b-da81-3e4c75425010","spec":{"type":"policy","cause":{"Message":"","User":"Paul Han \u003cpaul.han@roche.com\u003e"},"spec":{"sock-shop:deployment/queue-master":{"add":{"automated":"true"},"remove":null}}},"result":null}
