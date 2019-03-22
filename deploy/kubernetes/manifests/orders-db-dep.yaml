@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: orders-db
-        image: mongo:4.1
+        image: mongo:4.0.7
         ports:
         - name: mongo
           containerPort: 27017
